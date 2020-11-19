@@ -2,7 +2,7 @@ nii2surface takes a nifti brain image stack, identifies a particular target voxe
 
 If you use this class in your own work, kindly cite: "Bingham C.S., Parent M., McIntyre, C.C. Histology-Driven Model of the Macaque Hyperdirect Pathway. In Review."
 
-![Example Brain Surface](https://github.com/bingsome/nii2surface/blob/master/gif.gif)
+![](https://github.com/bingsome/nii2surface/blob/master/gif.gif)
 
 Dependencies: Python3, nibabel, and PoissonRecon (available at: https://github.com/mkazhdan/PoissonRecon)
 
@@ -17,7 +17,11 @@ Usage: This can be used as a standalone script by editing the Main() section bel
 	```
 	
 nii2surface() takes the following arguments:
+
 fname - name of the nifti file you would like to create a surface from
+
 resolution - 1d voxel size (e.g. 0.5mm)
+
 target_label - voxel value corresponding to the particular volume you wish to create a surface from. 
+
 The default value is None, in this case, the script will attempt to create a surface from the entire image stack for all values greater than 1 (presumed to be a reasonable background threshold)
