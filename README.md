@@ -1,6 +1,6 @@
 nii2surface takes a nifti brain image stack, identifies a particular target voxel value (perhaps a label from an atlas) and creates a surface from the labeled voxels using Poisson Surface Reconstruction. 
 
-If you use this class in your own work, kindly cite: "Bingham C.S., Parent M., McIntyre, C.C. Histology-Driven Model of the Macaque Hyperdirect Pathway. In Review."
+If you use this class in your own work, kindly cite: "Bingham C.S., Parent M., McIntyre C.C. Histology-Driven Model of the Macaque Hyperdirect Pathway. In Review."
 
 ![Example Brain Surface](https://github.com/bingsome/nii2surface/blob/main/gif.gif)
 
