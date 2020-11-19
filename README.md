@@ -6,11 +6,13 @@ nii2surface takes a nifti brain image stack, identifies a particular target voxe
 	
 	Usage: This can be used as a standalone script by editing the Main() section below, or by importing nii2surface and scripting as follows:
 	
-	`if __name__ == "__main__":
-	`		surfacemaker = nii2surface(os.getcwd()+'/macaque_volume_conductor/Macaque_subject2_segmentation/sub-02_T1w_skullstripped.nii.gz',resolution=0.5,target_label=None)
-	`		os.chdir(os.getcwd()+'/PoissonRecon/Bin/Linux')
-	`		print('running PoissonRecon')
-	`		sp.call('./PoissonRecon --in pointsnormals.txt --out brain.ply --depth 7',shell=True)
+	```
+	if __name__ == "__main__":
+			surfacemaker = nii2surface(os.getcwd()+'/macaque_volume_conductor/Macaque_subject2_segmentation/sub-02_T1w_skullstripped.nii.gz',resolution=0.5,target_label=None)
+			os.chdir(os.getcwd()+'/PoissonRecon/Bin/Linux')
+			print('running PoissonRecon')
+			sp.call('./PoissonRecon --in pointsnormals.txt --out brain.ply --depth 7',shell=True)
+	```
 	
 	nii2surface() takes the following arguments:
 	fname - name of the nifti file you would like to create a surface from
